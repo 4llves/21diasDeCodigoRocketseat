@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  background-image: url(https://www.highreshdwallpapers.com/wp-content/uploads/2014/05/Dark-Side-of-The-Earth.jpg);
+  color: #e3e3e3;    
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  display: flex;
+  position: relative;
+  left: calc(100vw - 520px);
+  top: 20px;
+  height: 250px;
+  width:  500px;
+
+  background: rgba(255, 255, 255, 0.1);
+  
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px; 
+  backdrop: blur(10px);
+  
+  padding: 40px;  
+  
+  box-shadow: 2px 2px rgba(255, 255, 255, 0.35);
+}
+
+h1 {    
+  font-size: 48px;
+  position: relative;
+  margin: auto;
+    
+  font-family: 'Rubik Iso', cursive;  
+  background-image: linear-gradient(to bottom, blue, red, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+
+img {  
+  display: block;
+  position: absolute;
+  width: 300px;  
+  bottom: 0;
+  left: 0;
+}
+
+div {
+  display: flex;  
+  justify-content: center;
+  align-items: center;  
+}
+
+.ph-coffee-thin {
+  color: #A18262;
+  font-size: 40px;
+}
+
+.ph-laptop-thin {
+  color: #808080;
+  font-size: 40px;
+}
+
+.ph-plus-thin,
+.ph-equals-thin {
+  font-size: 20px;
+  margin: 3px;
+  color: #FFF;
+}
