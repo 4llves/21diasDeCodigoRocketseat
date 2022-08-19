@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #67159C, #1E1E26)
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuToggle {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: #FFF;
+  border-radius: 70px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuToggle::before {
+  content: '+';
+  position: absolute;
+  font-size: 3em;
+  font-weight: 200;
+  color: #E82D92;
+  transition: 1.5s;
+}
+
+.menuToggle.active::before {
+  transform: rotate(225deg);
+}
+
+.menu {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #07D962;
+  border-radius: 70px;
+  z-index: -1;
+  transition: transform .5s, width .5s, height .5s;
+}
+
+.menuToggle.active ~ .menu {
+  width: 240px;
+  height: 70px;
+  z-index: 1;
+  transform: translateY(-100px);
+  transition-delay: 0s, .5s, .5s;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.menu::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #07D962;
+  left: calc(50% - 8px);
+  bottom: 4px;
+  transform: rotate(45deg);
+  border-radius: 2px;
+  transition: .5s;
+}
+
+.menuToggle.active ~ .menu::before {
+  transition-delay: .5s;
+  bottom: -6px;
+}
+
+.menu ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  gap: 40px;
+}
+
+.menu ul li {
+  list-style: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-30px);
+  transition: .25s;
+  transition-delay: calc(0s + var(--i));
+}
+
+.menuToggle.active ~ .menu ul li {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition-delay: calc(0.75s + var(--i));  
+}
+
+.menu ul li a {
+  display: block;
+  font-size: 2em;
+  text-decoration: none;
+  color: #1E1E26;
+}
+
+.menu ul li a:hover {
+  color: #E82D92;
+}
