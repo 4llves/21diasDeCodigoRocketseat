@@ -1,70 +1,121 @@
-body{
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background:#000
+  background-image: url(https://miro.medium.com/max/1360/1*VON9gHTrzeHZbHfXsqfzEA.gif); 
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
 }
 
-input{
+main {  
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;  
+  background: rgba(0, 0, 0, 0.9);
+}
+
+h1 {  
+  display: flex;
+  position: absolute;
+  top: calc(50% - 250px);
+  padding: 2px 25px;
+  color: #FFF;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+h1:hover {
+  color: #6eff3e;
+  box-shadow: 0 0 10px #1e9bff;
+  border-radius: 24px;
+  width: 290px;
+}
+
+input {
   color:#fff;
-  padding:17px;
-  outline:none;
+  padding: 28px;
+  outline: none;
   font-size: 30px;
   font-family: 'Bebas Neue', cursive;
-  border-radius: 25%;
+  border-radius: 25%;   
 }
-
-.maincolor{
-  background-color: #000;
-}
-
-.num{
-  width: 64px;
-  height: 67px;
-}
-
-.text{
-  width: 160px;
+.text {
+  width: 220px;
   height: 26px;
+  border-radius: 22px;
+  letter-spacing: 5px;
+  text-align: center;  
+  margin-bottom: 12px;
+}
+
+.clear {
+  padding: 5px;
+  width: 60px;
+  height: 60px;
   border-radius: 22px;
   letter-spacing: 5px;
   text-align: center;
   margin-bottom: 12px;
+  margin-left: 17px;
+  cursor: pointer;  
 }
 
-.text1{
-  width: 24px;
-  height: 26px;
-  border-radius: 22px;
-  letter-spacing: 5px;
-  text-align: center;
-  margin-bottom:12px;
-  border-radius: 50%;
-  cursor: pointer;
+.maincolor {
+  background-color: #000;
 }
 
-.main{
-  display: inline-block;
+.maincolor:hover {  
+  box-shadow: 0 0 25px #6eff3e;
 }
 
-.blue{
-  background-color:#0cd0cd;
+.text.maincolor:hover {
+  box-shadow: 0 0 25px #1e9bff;
 }
 
-.pin{
-  background-color:#cf1596;
+.num {    
+  width: 60px;
+  height: 60px;  
+  margin: 5px;
+  padding: 2px;  
 }
 
-.gre{
+.plus{
+  background-color: #4ddddd;
+}
+
+.minus{
+  background-color: #800000;
+}
+
+.multiply{
   background-color:#aad800;
 }
 
-.pur{
+.equal{
   background-color:#8c52f0
 }
 
-.ora{
+.divide{
   background-color:#fcb707;
+}
+
+.plus,.minus,
+.multiply,.divide{
+  margin-left: 10px;
 }
