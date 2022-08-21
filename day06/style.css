@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 100vw;
+  height: 100vh;  
+  font-family: 'Quicksand', sans-serif;
+
+  background-image: url(https://repository-images.githubusercontent.com/359455959/77bd5800-a418-11eb-8062-c5bc79836de1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 300px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  backdrop-filter: blur(5px);
+}
+
+.box:hover {
+  border: 1px solid rgba( 127, 255, 212, 1 );
+  transition: all 0.25s linear;
+  box-shadow: 2px 1px 10px rgba(0, 0, 255, 1);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+  
+}
+
+img {  
+  border-radius: 50%;  
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 1px 10px rgba(0, 0, 0, 15);  
+}
+
+h3 {
+  position: relative;  
+  align-items: center;
+  text-align: center;
+  font-weight: 100;
+  color: #e3e3e3;  
+
+  margin-top: 10px;
+  font-size: 32px;
+}
+
+.profession {
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 23px;
+  color: #e3e3e3;    
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+.card_info {  
+  list-style: none;  
+}
+
+.card_info li {
+  position: relative;  
+  align-items: center;  
+  text-align: center;
+  margin-top: 50px  
+}
+
+.value {
+  font-size: 23px;
+  display: block;
+  font-weight: bold;
+  color: #e3e3e3;
+}
+
+.parameter {
+  font-size: 23px;
+  font-weight: 100;
+  color: #e3e3e3;
+}
+
+.ph-github-logo {
+  margin-top: 40px;
+  font-size: 48px;
+  display: flex;
+  color: #c8c1c9;
+  align-items: center;
+  justify-content: center;  
+}
+
+.ph-github-logo:hover {
+  color: black;
+  transition: 1s;
+}
+
+a {
+  text-decoration: none;
+}
