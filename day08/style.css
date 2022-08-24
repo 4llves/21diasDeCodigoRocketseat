@@ -12,6 +12,13 @@ body {
   height: 100vh;
 }
 
+img {
+  position: absolute;
+  width: 400px;
+  z-index: 1;
+  right: 5px;
+}
+
 .toggleTheme {
   position: relative;
   height: 100vh;
