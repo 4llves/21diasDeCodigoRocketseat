@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background: #E9E5E5;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.toggleTheme {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #2A2C36;  
+  overflow: hidden;  
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.sun {
+  position: absolute;
+  background: #F2EF88;
+  height: 150px;
+  width: 150px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 1),
+  0 0 25px rgba(255, 251, 11, 1.0);  
+  margin-top: 5px;
+  border-radius: 50%;
+  right: 70px;
+  opacity: 0;
+  transition: all 0.7s ease;
+  cursor: pointer;
+}
+
+.moon {  
+  height: 80px;
+  width: 80px;
+  background: #D6D6D6;
+  position: absolute;
+  top: 10px;
+  left: 80px;
+  box-shadow: inset -10px 2px 0 0px #899098,
+  0 0 10px rgba(255, 255, 255, 1.0);
+  
+  border-radius: 50%;  
+  transition: all 0.7s 0s ease-in-out;
+  cursor: pointer;
+}
+
+.moon div:nth-child(n) {
+  position: relative;
+  background: #B9B8B0;
+  border-radius: 50%;
+  box-shadow: inset 4px -2px 0 0px #535457;
+}
+
+.moon div:nth-child(1) {
+  top: 25%;
+  left: 12%;
+  width: 27%;
+  height: 27%;
+}
+
+.moon div:nth-child(2) {
+  top: -11%;
+  left: 60%;
+  width: 16%;
+  height: 16%;    
+}
+
+.moon div:nth-child(3) {
+  top: 25%;
+  left: 44%;
+  width: 16%;
+  height: 16%;    
+}
+
+.stars {
+  opacity: 1;
+  margin-left: 100px;
+  top: 0;
+  left: 0;
+  transition: all .8s ease;
+  z-index: 1000;
+}
+
+.stars div:nth-child(n) {
+  position: absolute;
+  background: #FFF;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 5px;
+  height: 5px;
+  margin-left: 20%;
+  margin-top: -20%;
+  transition: all .5s ease;
+}
+
+.stars div:nth-child(1) {
+  left: 25%;
+  top: 50%;
+}
+
+.stars div:nth-child(2) {
+  left: 35%;
+  top: 55%;
+}
+
+.stars div:nth-child(3) {
+  left: 60%;
+  top: 60%;
+}
+
+.stars div:nth-child(4) {
+  left: 40%;
+  top: 45%;
+}
+
+.stars div:nth-child(5) {
+  left: 05%;
+  top: 55%;
+}
+
+.water {
+  margin-top: 50px;
+  height: calc(100vh - 100px);
+  background: #7FA1BB;
+  position: relative;
+  top: 130px;  
+  transition: all 0.7s ease;
+}
+
+/*HOVER EFFECTS*/
+.toggleTheme.active {
+  background: #E9786B;
+}
+
+.toggleTheme .sun.active {
+  opacity: 1;
+  top: 105px;
+}
+
+.toggleTheme .moon.active {
+  left: 120%;
+  top: -50%;
+}
+
+.toggleTheme .stars.active {
+  opacity: 0;
+}
+
+.toggleTheme .water.active {
+  background: #71BAF2;
+}
