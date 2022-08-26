@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+#particles-js {  
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  cursor: url(assets/rocket.png), auto;
+}

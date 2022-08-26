@@ -23,44 +23,52 @@ ul li {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
   font-size: 5em;
-  letter-spacing: 15px;
-  animation: animate 1.4s linear infinite;
+  letter-spacing: 15px;  
 }
 
 
 ul li:nth-child(1) {
+  animation: animate 4.2s linear infinite;
   animation-delay: 4.4s;
 }
 
 ul li:nth-child(2) {
+  animation: animate .4s linear infinite;
   animation-delay: 5.5s;
 }
 
 ul li:nth-child(3) {
+  animation: animate .6s linear infinite;
   animation-delay: 6.6s;
 }
 
 ul li:nth-child(4) {
+  animation: animate .8s linear infinite;
   animation-delay: 7.7s;
 }
 
 ul li:nth-child(5) {
+  animation: animate 1.0s linear infinite;
   animation-delay: 8.8s;
 }
 
 ul li:nth-child(6) {
+  animation: animate 1.2s linear infinite;
   animation-delay: 7.7s;
 }
 
 ul li:nth-child(7) {
+  animation: animate 1.4s linear infinite;
   animation-delay: 6.6s;
 }
 
 ul li:nth-child(8) {
+  animation: animate 1.6s linear infinite;
   animation-delay: 3.3s;
 }
 
 ul li:nth-child(9) {
+  animation: animate 1.8s linear infinite;
   animation-delay: 5.5s;
 }
 
@@ -70,12 +78,12 @@ ul li:nth-child(9) {
     text-shadow: none;
   }
   90% {
-    color: #484848;
+    color: #FFF;
     text-shadow: none;
   }
   100% {
     color: #ffA101;
-    text-shadow: 0 0 7px #FFF900,
+    text-shadow: 0 0 7px #0000FF,
     0 0 50px #FF0000;
   }
 }
