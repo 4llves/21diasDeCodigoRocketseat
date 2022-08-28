@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+ body {
+  background: #fff;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;  
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+}
+
+img {  
+  width: 300px;
+  height: 280px;
+  object-fit: cover;  
+}
+
+p {
+  font-size: 12px;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  color: #FFF;  
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 200px;  
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background: #000;  
+  width: 300px;
+  height: 300px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0006)
+}
