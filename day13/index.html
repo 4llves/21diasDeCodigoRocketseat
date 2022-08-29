@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Menu Responsivo</title>
+</head>
+
+<body>
+  <nav>
+    <h1 class="brand"><a href="#">Menu Responsivo</a></h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div style="clear:both"></div>
+  </nav>
+  <div class="responsive-bar">
+    <h3 class="brand"><a href="#">Menu Responsivo</a></h3>
+    <h4 class="menu">Menu</h4>
+    <div style="clear:both"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".menu").click(function () {
+        $("nav").slideToggle(500);
+      })
+    })
+  </script>
+</body>
+
+</html>
