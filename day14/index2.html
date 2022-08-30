@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://unpkg.com/phosphor-icons"></script>
+
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <title>Quiz</title>
+</head>
+
+<body>
+  <div class="start_btn"><button>Start Quiz</button></div>
+
+  <div class="info_box">
+    <div class="info_title">
+      <span>Some RUles of this Quiz</span>
+    </div>
+
+    <div class="info_list">
+      <div class="info">1. You will have only <span>15 seconds</span> per each questino.</div>
+      <div class="info">2. Once you select your answer, you can't reselect.</div>
+      <div class="info">3. You can't select any option once time goes off.</div>
+      <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+      <div class="info">4. You'll get points on the basis of your correct answers.</div>
+    </div>
+    <div class="buttons">
+      <button class="quit">Exit Quiz</button>
+      <button class="restart">Continue</button>
+    </div>
+  </div>
+
+  <div class="quiz_box">
+    <header>
+      <div class="title">Awesome Quiz Application</div>
+      <div class="timer">
+        <div class="timer_text">Time left</div>
+        <div class="timer_sec">15</div>
+      </div>
+    </header>
+    <section>
+      <div class="que_text">
+        <span>1. Qual o quinto desafio dos 21 dias de código da Rocketseat?</span>
+      </div>
+      <div class="option_list">
+        <div class="option">
+          <span>Desenvolver uma página 404.</span>
+          <i class="ph-checks"></i>
+        </div>
+        <div class="option">
+          <span>Criar um Repositório.</span>
+          <i class="ph-x"></i>
+        </div>
+        <div class="option">
+          <span>Criar um botão animado.</span>
+          <i class="ph-x"></i>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="total_que">
+        <span>
+          <p>2</p>Of<p>5</p>Questions
+        </span>
+      </div>
+      <button class="next_btn">Next</button>
+    </footer>
+  </div>
+
+  <div class="result_box">
+    <div class="icon">
+      <i class="ph-crown-fill"></i>
+    </div>
+
+    <div class="complete_text">
+      You've completed the Quiz!
+    </div>
+
+    <div class="score_text">
+      <span>and sorry, You got only <p>2</p>out of<p>5</p></span>
+    </div>
+
+    <div class="buttons">
+      <button class="restart">Replay Quiz</button>
+      <button class="quit">Quit Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="questions.js"></script>
+
+</body>
+
+</html>
