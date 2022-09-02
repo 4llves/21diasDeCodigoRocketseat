@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #121214;
+  height: 100vh;
+  width: 100%;  
+}
+
+h1 {
+  color: #FFF;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 150%;
+  margin-bottom: 2%;
+}
+
+p {
+  color: #FFF;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 150%;
+}
+
+img {
+  width: 240px;
+  cursor: pointer;
+}
+
+div {     
+  width: 240px;
+  text-align: center;
+}
+
+input {
+  opacity: 0;
+}
