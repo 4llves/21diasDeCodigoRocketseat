@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1E1E26;
+  color: #e3e3e3;
+}
+
+main {
+  padding: 20px;
+  box-shadow: 0 1px 10px #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+}
+
+main > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  padding: 5px;
+  outline: none;
+  accent-color: #07D962;
+  border-color: #07D962;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;  
+}
+
+input[type="range"] {
+  width: 90%;
+}
+
+button {
+  background-color: #67159C;
+  cursor: pointer;
+  color: #FFFFFF;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+}
