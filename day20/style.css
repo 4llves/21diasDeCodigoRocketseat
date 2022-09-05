@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background: #121214;
+}
+
+#emojis {
+  padding-left: 40px;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 20px auto 10px auto;  
+  width: 40%;  
+  font-size: 62px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+ul li {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;    
+  margin: 10px;
+  padding: 20px;
+  cursor: pointer;  
+  font-size: 62px;  
+  border-radius: 10px;  
+}
+
+ul li:hover {
+  box-shadow: 0 0 5px 2px blue;
+}
