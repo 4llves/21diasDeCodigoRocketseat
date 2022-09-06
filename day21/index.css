@@ -13,7 +13,10 @@ main {
   background: #222324;
 }
 
-#index,
+#index {
+  height: 100vh;  
+}
+
 #about {
   height: 100vh;  
 }
