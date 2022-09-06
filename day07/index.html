@@ -10,45 +10,30 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
+  <script src="https://unpkg.com/phosphor-icons"></script>
+
   <link rel="stylesheet" href="style.css">
 
   <title>Stopwatch</title>
 </head>
 
 <body>
-  <div id="time">
-    <div class="circle" style="--clr:#FF2972">
-      <div class="dots hr_dot"></div>
-      <svg>
-        <circle cx="70" cy="70" r="70"></circle>
-        <circle cx="70" cy="70" r="70" id="hh"></circle>
-      </svg>
-      <div id="hours">
-        00
-      </div>
-    </div>
+  <div class="container">
+    <h1>Cronometro</h1>
+    <h3 id="cont">00:00:00</h3>
 
-    <div class="circle" style="--clr:#FEE800">
-      <div class="dots min_dot"></div>
-      <svg>
-        <circle cx="70" cy="70" r="70"></circle>
-        <circle cx="70" cy="70" r="70" id="mm"></circle>
-      </svg>
-      <div id="minutes">
-        00
-      </div>
-    </div>
+    <button onclick="start()" class="start">
+      <i class="ph-play"></i>
+    </button>
 
-    <div class="circle" style="--clr:#04FC43">
-      <div class="dots sec_dot"></div>
-      <svg>
-        <circle cx="70" cy="70" r="70"></circle>
-        <circle cx="70" cy="70" r="70" id="ss"></circle>
-      </svg>
-      <div id="seconds">
-        00
-      </div>
-    </div>
+    <button onclick="pause()" class="pause">
+      <i class="ph-pause"></i>
+    </button>
+
+    <button onclick="stop()" class="stop">
+      <i class="ph-stop"></i>
+    </button>
+
   </div>
   <footer>
     <script src="/script.js"></script>
