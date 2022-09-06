@@ -18,8 +18,7 @@ main {
 }
 
 #about {
-  display: inline-table;
-  height: 100vh;
+  display: inline-table;  
 }
 
 /*HOME*/
