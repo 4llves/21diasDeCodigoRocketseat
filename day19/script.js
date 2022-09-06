@@ -1,4 +1,4 @@
-const requestUrl = `https://api.unsplash.com/search/photos?query=london&client_id=${suaapiaqui}`;
+const requestUrl = `https://api.unsplash.com/search/photos?query=london&client_id=nyrhEUFSk6yEk-EAC2zl4dwculhEgWmBRObo4HLGeF8`;
 const getImagesButton = document.querySelector('.getImagesButton');
 const imageToDisplay1 = document.querySelector('.imageToDisplay1');
 const imageToDisplay2 = document.querySelector('.imageToDisplay2');
