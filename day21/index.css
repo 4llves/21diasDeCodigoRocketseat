@@ -12,10 +12,6 @@ main {
   width: 100%;  
   background: #222324;
 }
-#index,
-#about {
-  height: 100vh;  
-}
 
 /*HOME*/
 
