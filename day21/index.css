@@ -18,7 +18,8 @@ main {
 }
 
 #about {
-  height: 100vh;  
+  display: inline-table;
+  height: 100vh;
 }
 
 /*HOME*/
