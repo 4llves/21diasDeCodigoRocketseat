@@ -13,6 +13,11 @@ main {
   background: #222324;
 }
 
+#index,
+#about {
+  height: 100vh;  
+}
+
 /*HOME*/
 
 #logo {
